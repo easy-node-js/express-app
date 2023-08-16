@@ -1,0 +1,27 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon -L --watch src/ --watch --exec | pino-pretty -t HH:MM:ss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stanislav Tarasenko",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "http-errors": "^2.0.0",
+    "js-yaml": "^4.1.0",
+    "on-finished": "^2.4.1",
+    "pino": "^8.15.0",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "pino-pretty": "^10.2.0",
+    "prettier": "^3.0.1"
+  }
+}
